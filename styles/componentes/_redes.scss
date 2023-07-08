@@ -1,0 +1,102 @@
+@import "../abstract/variaveis";
+
+// para desktop
+.redes-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  background: #000;
+  h3 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 40px 0;
+    color: #fff;
+  }
+  .facilidades-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    .itens-facilidades {
+      display: flex;
+      width: 304px;
+      align-items: center;
+      gap: 24px;
+      .facilidade-textos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        h4 {
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 23px;
+          color: #daff01;
+        }
+        p {
+          width: 182px;
+          font-family: Inter;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// para tablet
+@media (max-width: 1100px) {
+  .redes-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    background: #000;
+    .facilidades-cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+
+      .itens-facilidades {
+        display: flex;
+        width: 304px;
+        align-items: center;
+        gap: 24px;
+        .facilidade-textos {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+        }
+      }
+    }
+  }
+}
+
+// para celular
+@media (max-width: 414px) {
+  .redes-container {
+    h3 {
+      font-size: 28px;
+    }
+  }
+}

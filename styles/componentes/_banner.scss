@@ -1,0 +1,95 @@
+@import "../abstract/variaveis";
+
+// para desktop
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  flex-shrink: 0;
+
+  background: url(../../img/banner/Image.png) no-repeat center;
+  background-size: cover;
+
+  .esquerda {
+    background: none;
+    border: none;
+    padding-left: 47px;
+  }
+  .direita {
+    background: none;
+    border: none;
+    padding-right: 47px;
+  }
+  .marcadores {
+    display: none;
+    position: absolute;
+    right: 46%;
+    bottom: 20%;
+  }
+}
+
+// para tablet
+@media (max-width: 1100px) {
+  .banner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 415px;
+
+    background: url(../../img/banner/ImageTablet.png)  #895fb5 40% no-repeat;
+
+    .esquerda {
+      background: none;
+      border: none;
+      padding-left: 47px;
+    }
+    .direita {
+      background: none;
+      border: none;
+      padding-right: 47px;
+    }
+    .marcadores {
+      display: block;
+      position: absolute;
+      right: 46%;
+      bottom: 20%;
+    }
+  }
+}
+
+// para celular
+@media (max-width: 414px) {
+    .banner {
+        width: 100%;
+        display: flex;
+        margin-top: 75px;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        height: 415px;
+    
+        background: url(../../img/banner/ImageMOBILE.png)  #895fb5 40% no-repeat;
+    
+        .esquerda {
+          background: none;
+          border: none;
+          padding-left: 47px;
+        }
+        .direita {
+          background: none;
+          border: none;
+          padding-right: 47px;
+        }
+        .marcadores {
+          display: block;
+          position: absolute;
+          height: 20px;
+          right: 37%;
+          top: 55%;
+        }
+      }
+}

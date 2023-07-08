@@ -1,0 +1,26 @@
+// Cores
+$cor-01principal: #212529;
+$cor-02secundaria: #daff01;
+$cor-03tercearia: #9353ff;
+$cor-04quartenaria: #000000;
+
+// Tamanho das fontes
+$fontSize-01titulos: "";
+$fontSize-02subtitulos: "Inter", sans-serif;
+$fontSize-03paragrafos: "";
+
+// Font-family
+$fontFamily-01titulos: "";
+$fontFamily-02subtitulos: "";
+$fontFamily-03paragrafos: "";
+
+// Container
+@mixin container {
+  margin: 0 auto;
+  padding: 0 23px;
+}
+@mixin containerMobile {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
