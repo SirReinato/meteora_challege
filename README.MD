@@ -22,7 +22,7 @@ Para isso, eles solicitaram nossa ajuda como desenvolvedores para criar um site 
 Um rodapé com informação do site.
 ‌
 
-Um detalhe muito importante é que o site precisa ser responsivo, para proporcionar aos clientes facilidade de compra através de dispositivos mobiles
+>Um detalhe muito importante é que o site precisa ser responsivo, para proporcionar aos clientes facilidade de compra através de dispositivos mobiles
 
 ```
 npm install 
