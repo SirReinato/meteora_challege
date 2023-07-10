@@ -6,4 +6,7 @@ function menuHamburguer() {
   const menu = document.querySelector(".menu-hamburguer");
 
   menu.classList.toggle("ativo");
+  if (condition) {
+    
+  }
 }
