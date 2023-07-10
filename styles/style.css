@@ -742,7 +742,7 @@ a {
 footer {
   display: flex;
   width: 100%;
-  padding: 17px 23px;
+  padding: 17px 0;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
