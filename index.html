@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    
+
     <link rel="stylesheet" href="styles/style.css" />
     <title>METEORA</title>
   </head>
@@ -61,7 +61,7 @@
         <input class="btn-submit" type="submit" value="Buscar" />
       </form>
     </header>
-    
+
     <!-- banner ______________________________ -->
     <section class="banner">
       <!-- Slider main container -->
@@ -77,8 +77,8 @@
         <div class="swiper-pagination bolinhas_nav"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev "></div>
-        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
         <!-- If we need scrollbar
         <div class="swiper-scrollbar"></div> -->
@@ -137,7 +137,6 @@
     <section class="produtos-container">
       <h2>Produtos que estão bombando!</h2>
       <div class="produtos">
-        
         <div class="produtos-item">
           <figure>
             <img src="img/produtos/Camiseta.png" alt="Camiseta Conforto" />
@@ -148,8 +147,29 @@
             verão. Modelagem unissex.
           </p>
           <span>R$ 70,00</span>
-          <a class="btn-produto" href="#">Ver mais</a>
+          <a class="btn-produto menu__button" href="#">Ver mais</a>
         </div>
+
+        <dialog class="modal">
+          <header class="modal-header">
+            <h2>Header da Modal</h2>
+            <button type="button" class="btn-fechar close">X</button>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <form>
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Digite seu nome"
+              required
+            />
+            <button type="submit">Enviar</button>
+          </form>
+        </dialog>
 
         <div class="produtos-item">
           <figure>
@@ -260,7 +280,7 @@
         2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.
       </p>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.js"></script>
     <script src="app/script.js"></script>
     <script src="app/componentes/header.js"></script>
