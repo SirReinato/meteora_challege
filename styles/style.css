@@ -272,15 +272,15 @@ a {
   height: 415px;
 }
 .banner .swiper .swiper-wrapper .primeira {
-  background: url(../../img/banner/Image.png) #895fb5 40% no-repeat;
+  background: url(../img/banner/Image.png) #895fb5 40% no-repeat;
   background-size: cover;
 }
 .banner .swiper .swiper-wrapper .segunda {
-  background: url(../../img/banner/Imagembanner2-desktop.png) #895fb5 40% no-repeat;
+  background: url(../img/banner/Imagembanner2-desktop.png) #895fb5 40% no-repeat;
   background-size: cover;
 }
 .banner .swiper .swiper-wrapper .terceira {
-  background: url(../../img/banner/Imagembanner3-desktop.png) #895fb5 40% no-repeat;
+  background: url(../img/banner/Imagembanner3-desktop.png) #895fb5 40% no-repeat;
   background-size: cover;
 }
 .banner .swiper .swiper-button-prev {
@@ -298,15 +298,15 @@ a {
     height: 415px;
   }
   .banner .swiper .swiper-wrapper .primeira {
-    background: url(../../img/banner/ImageTablet.png) #895fb5 10% no-repeat;
+    background: url(../img/banner/ImageTablet.png) #895fb5 10% no-repeat;
     background-size: cover;
   }
   .banner .swiper .swiper-wrapper .segunda {
-    background: url(../../img/banner/Imagembanner2-tablet.png) #895fb5 40% no-repeat;
+    background: url(../img/banner/Imagembanner2-tablet.png) #895fb5 40% no-repeat;
     background-size: cover;
   }
   .banner .swiper .swiper-wrapper .terceira {
-    background: url(../../img/banner/Imagembanner3-tablet.png) #895fb5 40% no-repeat;
+    background: url(../img/banner/Imagembanner3-tablet.png) #895fb5 40% no-repeat;
     background-size: cover;
   }
 }
@@ -319,15 +319,15 @@ a {
     height: 415px;
   }
   .banner .swiper .swiper-wrapper .primeira {
-    background: url(../../img/banner/ImageMOBILE.png) #895fb5 10% no-repeat;
+    background: url(../img/banner/ImageMOBILE.png) #895fb5 10% no-repeat;
     background-size: cover;
   }
   .banner .swiper .swiper-wrapper .segunda {
-    background: url(../../img/banner/Imagembanner2-mobile.png) #895fb5 40% no-repeat;
+    background: url(../img/banner/Imagembanner2-mobile.png) #895fb5 40% no-repeat;
     background-size: cover;
   }
   .banner .swiper .swiper-wrapper .terceira {
-    background: url(../../img/banner/Imagembanner3-mobile.png) #895fb5 40% no-repeat;
+    background: url(../img/banner/Imagembanner3-mobile.png) #895fb5 40% no-repeat;
     background-size: cover;
   }
 }
