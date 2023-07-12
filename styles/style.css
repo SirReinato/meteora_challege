@@ -475,6 +475,143 @@ a {
   color: #fff;
   background: #9353ff;
 }
+.produtos-container .produtos .produtos-item .modal {
+  width: 700px;
+  height: 587px;
+  border-radius: 4px;
+  border: none;
+  margin: auto auto;
+}
+.produtos-container .produtos .produtos-item .modal .modal-header {
+  display: flex;
+  box-sizing: border-box;
+  height: 65px;
+  padding: 18px 28px 18px 16px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  border-radius: 4px 4px 0px 0px;
+  border: 1px solid #dee2e6;
+  background: #000;
+}
+.produtos-container .produtos .produtos-item .modal .modal-header h2 {
+  width: 568px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 500;
+  line-height: normal;
+}
+.produtos-container .produtos .produtos-item .modal .modal-header .btn-fechar {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.produtos-container .produtos .produtos-item .modal .produtinho {
+  margin: 16px auto;
+  display: flex;
+  width: 668px;
+  align-items: flex-start;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos h3 {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0 16px;
+  line-height: 23px;
+  color: #212529;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .detalhe_p {
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #212529;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos span {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #212529;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .vendidoEentregue {
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #adb5bd;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .form-cores {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 16px;
+  gap: 16px;
+  align-self: stretch;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .form-cores .form-container-cores {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .form-cores .form-container-cores .cores_form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .form-tamanhos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 16px;
+  gap: 16px;
+  align-self: stretch;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .form-tamanhos .form-container-tamanho {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .form-tamanhos .form-container-tamanho .tamanho_form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .add-sacola {
+  display: flex;
+  padding: 9px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  margin: 0 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.457px;
+  cursor: pointer;
+  border: none;
+  background: #9353ff;
+  color: #fff;
+}
 
 @media (max-width: 1100px) {
   .produtos-container {
@@ -493,6 +630,58 @@ a {
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
+  }
+  .produtos-container .modal {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: none;
+    margin: auto auto;
+  }
+  .produtos-container .modal .modal-header {
+    display: flex;
+    box-sizing: border-box;
+    height: 65px;
+    padding: 18px 28px 18px 16px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #dee2e6;
+    background: #000;
+  }
+  .produtos-container .modal .modal-header h2 {
+    width: 211px;
+    color: #fff;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .produtos-container .modal .produtinho {
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .produtos-container .modal .detalhes_produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+  }
+  .produtos-container .modal .detalhes_produtos .detalhe_p {
+    color: #212529;
+    width: 286px;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
   }
 }
 .redes-container {

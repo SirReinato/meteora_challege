@@ -147,29 +147,104 @@
             verão. Modelagem unissex.
           </p>
           <span>R$ 70,00</span>
-          <a class="btn-produto menu__button" href="#">Ver mais</a>
-        </div>
+          <a class="btn-produto open" href="#">Ver mais</a>
 
-        <dialog class="modal">
-          <header class="modal-header">
-            <h2>Header da Modal</h2>
-            <button type="button" class="btn-fechar close">X</button>
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <form>
-            <label for="name">Nome:</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Digite seu nome"
-              required
-            />
-            <button type="submit">Enviar</button>
-          </form>
-        </dialog>
+          <!-- parte do modal ___________________ -->
+
+          <dialog class="modal">
+            <header class="modal-header">
+              <img
+                class="visto"
+                src="img/produtos/modal/check-circle.svg"
+                alt="circulo que significa um visto"
+              />
+              <h2>Confira detalhes sobre o produto</h2>
+              <button type="button" class="btn-fechar close">
+                <img
+                  src="img/produtos/modal/Icon.svg"
+                  alt="um x que significa fechar"
+                />
+              </button>
+            </header>
+            <div class="produtinho">
+              <figure>
+                <img
+                  src="img/produtos/Jaqueta.png"
+                  alt="homem usando jaqueta foda"
+                />
+              </figure>
+              <div class="detalhes_produtos">
+                <h3>Jaqueta Jeans</h3>
+                <p class="detalhe_p">
+                  Modelo unissex oversized com gola de camurça. Atemporal e
+                  autêntica!
+                </p>
+                <span>R$ 150,00</span>
+                <p class="vendidoEentregue">Vendido e entregue por Riachuelo</p>
+
+                <form class="form-cores">
+                  <h4>Cores:</h4>
+                  <div class="form-container-cores">
+                    <div class="cores_form">
+                      <input
+                        type="radio"
+                        name="sexo"
+                        id="azulClaro"
+                        value="azulClaro"
+                      />
+                      <label for="azulClaro">Azul claro</label>
+                    </div>
+                    <div class="cores_form">
+                      <input
+                        type="radio"
+                        name="sexo"
+                        id="Offwhite"
+                        value="Offwhite"
+                      />
+                      <label for="Offwhite">Offwhite</label>
+                    </div>
+                    <div class="cores_form">
+                      <input
+                        type="radio"
+                        name="sexo"
+                        id="preto"
+                        value="preto"
+                      />
+                      <label for="preto">Preto</label>
+                    </div>
+                  </div>
+                </form>
+
+                <form class="form-tamanhos">
+                  <h4>Tamanho:</h4>
+                  <div class="form-container-tamanho">
+                    <div class="tamanho_form">
+                      <input type="radio" name="tamanho" id="p" value="p" />
+                      <label for="p">P</label>
+                    </div>
+                    <div class="tamanho_form">
+                      <input type="radio" name="tamanho" id="pp" value="pp" />
+                      <label for="pp">PP</label>
+                    </div>
+                    <div class="tamanho_form">
+                      <input type="radio" name="tamanho" id="m" value="m" />
+                      <label for="m">M</label>
+                    </div>
+                    <div class="tamanho_form">
+                      <input type="radio" name="tamanho" id="g" value="g" />
+                      <label for="g">G</label>
+                    </div>
+                    <div class="tamanho_form">
+                      <input type="radio" name="tamanho" id="gg" value="gg" />
+                      <label for="gg">GG</label>
+                    </div>
+                  </div>
+                </form>
+                <button class="add-sacola close" type="submit">Adicionar à sacola</button>
+              </div>
+            </div>
+          </dialog>
+        </div>
 
         <div class="produtos-item">
           <figure>
