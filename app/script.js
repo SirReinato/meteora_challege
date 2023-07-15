@@ -27,12 +27,27 @@ abriModealBtn.addEventListener("click", (event) => {
 });
 /* Ao clicar no botão de Fechar Modal, executamos a função
 close() na Modal */
-fecharModalBtn.forEach(fechar => {
+fecharModalBtn.forEach((fechar) => {
   fechar.addEventListener("click", (event) => {
     event.preventDefault();
     modal.close();
   });
-})
+});
 
+// newls modal ____________________________________
+const modalNewsl = document.querySelector(".modal-newls");
+const btnNewsl = document.querySelector(".btn-news");
+const btnNewlsFechar = document.querySelector(".fechar");
 
-
+// abrir modal
+btnNewsl.addEventListener("click", (event) => {
+  event.preventDefault();
+  modalNewsl.classList.toggle("deuBom");
+  modalNewsl.showModal();
+  setTimeout(() => {
+    modalNewsl.close();
+    modalNewsl.classList.remove("deuBom");
+  }, 1500);
+});
+// fechar modal
+btnNewlsFechar.addEventListener("click", () => modalNewsl.close());

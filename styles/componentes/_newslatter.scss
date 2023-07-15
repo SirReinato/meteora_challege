@@ -48,9 +48,10 @@
         border: 1px solid #000;
         color: #6c757d;
       }
-      button {
+      .btn-news {
         width: 84px;
         height: 38px;
+        cursor: pointer;
         flex-shrink: 0;
         font-family: Inter;
         font-size: 16px;
@@ -64,6 +65,79 @@
       }
     }
   }
+}
+ // parte do modal
+ .modal-newls {
+  display: flex;
+  width: 700px;
+  display: none;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(44, 63, 88, 0.35);
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .newls-confirm-header {
+    display: flex;
+    height: 65px;
+    padding: 0 18px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #dee2e6;
+    background: #000;
+    figure {
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    h3 {
+      flex: 1 0 0;
+      color: #fff;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+    }
+    button {
+      width: 16px;
+      height: 16px;
+      background: none;
+      border: none;
+    }
+  }
+  .modal-news-corpo {
+    display: flex;
+    padding: 16px 16px 32px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+
+    border-radius: 0px 0px 4px 4px;
+    background: #fff;
+    p {
+      align-self: stretch;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px; /* 143.75% */
+
+      color: #212529;
+    }
+  }
+}
+.modal-newls.deuBom{
+  display: block;
 }
 
 // para tablet

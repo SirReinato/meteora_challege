@@ -477,10 +477,13 @@ a {
 }
 .produtos-container .produtos .produtos-item .modal {
   width: 700px;
-  height: 587px;
+  height: 620px;
   border-radius: 4px;
   border: none;
   margin: auto auto;
+}
+.produtos-container .produtos .produtos-item .modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
 }
 .produtos-container .produtos .produtos-item .modal .modal-header {
   display: flex;
@@ -535,12 +538,20 @@ a {
   color: #212529;
 }
 .produtos-container .produtos .produtos-item .modal .detalhes_produtos .detalhe_p {
+  width: 95%;
   font-family: Inter;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   color: #212529;
+}
+.produtos-container .produtos .produtos-item .modal .detalhes_produtos .detalhe_p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border: 1px solid #000000;
+  margin-top: 24px;
 }
 .produtos-container .produtos .produtos-item .modal .detalhes_produtos span {
   font-family: Inter;
@@ -562,7 +573,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 16px;
+  padding: 16px 16px;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
   gap: 16px;
   align-self: stretch;
 }
@@ -632,7 +645,7 @@ a {
     padding: 20px;
   }
   .produtos-container .modal {
-    width: 100%;
+    max-width: 414px;
     height: auto;
     border-radius: 4px;
     border: none;
@@ -647,6 +660,7 @@ a {
     align-items: center;
     gap: 20px;
     align-self: stretch;
+    box-sizing: border-box;
     border-radius: 4px 4px 0px 0px;
     border: 1px solid #dee2e6;
     background: #000;
@@ -664,19 +678,26 @@ a {
     margin: 16px auto;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 80%;
     align-items: flex-start;
   }
-  .produtos-container .modal .detalhes_produtos {
+  .produtos-container .modal .produtinho figure {
+    width: 100%;
+  }
+  .produtos-container .modal .produtinho figure img {
+    width: 100%;
+  }
+  .produtos-container .modal .produtinho .detalhes_produtos {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
     align-self: stretch;
   }
-  .produtos-container .modal .detalhes_produtos .detalhe_p {
+  .produtos-container .modal .produtinho .detalhes_produtos .detalhe_p {
     color: #212529;
-    width: 286px;
+    width: 100%;
     font-family: Inter;
     font-size: 13px;
     font-style: normal;
@@ -825,9 +846,10 @@ a {
   border: 1px solid #000;
   color: #6c757d;
 }
-.newslatter .container-news .form button {
+.newslatter .container-news .form .btn-news {
   width: 84px;
   height: 38px;
+  cursor: pointer;
   flex-shrink: 0;
   font-family: Inter;
   font-size: 16px;
@@ -838,6 +860,74 @@ a {
   color: #fff;
   border: 1px solid #9353ff;
   background: #9353ff;
+}
+
+.modal-newls {
+  display: flex;
+  width: 700px;
+  display: none;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(44, 63, 88, 0.35);
+}
+.modal-newls::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+.modal-newls .newls-confirm-header {
+  display: flex;
+  height: 65px;
+  padding: 0 18px;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  border-radius: 4px 4px 0px 0px;
+  border: 1px solid #dee2e6;
+  background: #000;
+}
+.modal-newls .newls-confirm-header figure img {
+  width: 32px;
+  height: 32px;
+}
+.modal-newls .newls-confirm-header h3 {
+  flex: 1 0 0;
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.modal-newls .newls-confirm-header button {
+  width: 16px;
+  height: 16px;
+  background: none;
+  border: none;
+}
+.modal-newls .modal-news-corpo {
+  display: flex;
+  padding: 16px 16px 32px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+}
+.modal-newls .modal-news-corpo p {
+  align-self: stretch;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 143.75% */
+  color: #212529;
+}
+
+.modal-newls.deuBom {
+  display: block;
 }
 
 @media (max-width: 1100px) {
