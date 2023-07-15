@@ -51,3 +51,16 @@ btnNewsl.addEventListener("click", (event) => {
 });
 // fechar modal
 btnNewlsFechar.addEventListener("click", () => modalNewsl.close());
+
+
+// __________________________ teste
+
+const url = 'http://localhost:3000/projetos'
+
+async function testando() {
+  const preparando = await fetch(url);
+  const pronta = await preparando.json();
+
+  console.log(pronta);
+}
+testando()
