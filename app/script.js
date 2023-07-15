@@ -47,7 +47,7 @@ btnNewsl.addEventListener("click", (event) => {
   setTimeout(() => {
     modalNewsl.close();
     modalNewsl.classList.remove("deuBom");
-  }, 1500);
+  }, 3000);
 });
 // fechar modal
 btnNewlsFechar.addEventListener("click", () => modalNewsl.close());
